@@ -1,0 +1,322 @@
+@import "fonts";
+@import "colors";
+@import "general";
+
+body {
+    font-family: var(--font-main);
+
+    background: var(--background-color);
+    color: var(--text-color);
+
+    margin: 0;
+}
+
+// MENU
+#menu {
+    position: relative;
+    width: 100%;
+    height: 64px;
+
+    display: flex;
+    justify-content: center;
+
+    .marker {
+        position: absolute;
+        content: "";
+        background-color: transparent; //var(--color-black);
+        width: 100%;
+        height: 6px;
+        bottom: 0px;
+        left: 0px;
+        transition:
+            left var(--easing-time) var(--easing-function),
+            width var(--easing-time) var(--easing-function),
+            background-color var(--easing-time) ease-out;
+    }
+
+    button {
+        max-width: 160px;
+        flex-grow: 1;   // }
+        flex-shrink: 1; // } all buttons have the same width
+        flex-basis: 0;  // }
+        height: 64px;
+        background: transparent;
+        color: inherit;
+        border: 0;
+        font-family: "museosans";
+        font-size: 20px;
+        text-transform: uppercase;
+        box-sizing: border-box;
+
+        position: relative;
+
+        &:hover {
+            cursor: pointer;
+        }
+    }
+}
+
+#content {
+    margin-top: 16px;
+    width: 100%;
+    overflow: hidden;
+
+    position: relative;
+
+    .page {
+        box-sizing: border-box;
+        width: 100%;
+        min-height: calc(100vh - 80px); // fallback
+        min-height: calc(100dvh - 80px); // note: dvh instead of dv
+
+        position: absolute;
+        left: 100%;
+        top: 0px;
+        padding: 0px 8px 8px 8px;
+
+        display: none;
+
+        &.visible {
+            display: block;
+        }
+    }
+}
+
+// HOME
+
+#page-home {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+
+    > div {
+        max-width: 800px;
+        margin: 0px auto;
+    }
+
+    .hi {
+        display: block;
+        text-align: center;
+        font-size: 32px;
+        margin-top: 32px;
+
+        b {
+            color: var(--color-blue);
+        }
+    }
+
+    .photo {
+        position: relative;
+        width: 224px;
+        overflow: hidden;
+        border-radius: 50%;
+        background-color: var(--color-blue) 50%;
+        margin: 32px auto;
+        background-image: url('../img/me.jpg');
+        background-size: cover;
+        // background-blend-mode: luminosity;
+
+        &:before {
+            content: '';
+            display: block;
+            padding-bottom: 100%;
+        }
+    }
+
+    .text {
+        text-align: center;
+        padding: 0px 16px;
+        line-height: 1.5;
+    }
+
+    .contact {
+        position: absolute;
+        bottom: 0px;
+        width: 100vw;
+        max-width: 100vw;
+
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 24px;
+        height: 32px;
+        padding: 8px;
+
+        a {
+            display: block;
+            width: 32px;
+            height: 32px;
+        }
+
+        img {
+            width: 32px;
+            height: 32px;
+            // filter: invert(18%) sepia(70%) saturate(2373%) hue-rotate(190deg) brightness(108%) contrast(98%); // https://codepen.io/sosuke/pen/Pjoqqp
+            filter: drop-shadow(0px -1000px 0 var(--color-blue));
+            transform: translateY(1000px);
+        }
+
+        > div {
+            cursor: pointer;
+        }
+    }
+}
+
+#contact-email {
+    position: relative;
+
+    .popup {
+        transition: opacity 0.2s linear;
+        opacity: 0;
+
+        &.active {
+            opacity: 1;
+        }
+
+        &::after {
+            content: "moc.liamg@legovtessej";
+            position: absolute;
+            letter-spacing: 1px;
+            left: -64px;
+            top: -64px;
+            width: 240px;
+            height: 48px;
+            line-height: 44px;
+            background-color: var(--text-color);
+            color: var(--color-white);
+            text-align: center;
+            font-size: 16px;
+            unicode-bidi: bidi-override;
+            direction: rtl;
+            border-radius: 24px;
+        }
+
+        &::before {
+            content: "";
+            position: absolute;
+            width: 24px;
+            height: 24px;
+            transform: rotate(45deg);
+            left: 4px;
+            top: -36px;
+            background-color: black;
+        }
+    }
+}
+
+// PROJECTS
+
+.project-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 16px 64px;
+    padding: 0px;
+    justify-content: center;
+    max-width: 1500px;
+    margin: 0px auto;
+}
+
+@mixin gradient-border {
+    position: relative;
+    box-sizing: border-box;
+
+    $border: 2px;
+    $radius: 16px;
+
+    background-clip: padding-box; /* !importanté */
+    border: solid $border transparent; /* !importanté */
+    border-radius: $radius;
+
+    &:before,
+    &:after {
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        z-index: -1;
+        margin: -$border; /* !importanté */
+        border-radius: inherit; /* !importanté */
+        background: linear-gradient(to right, red, orange);
+
+        background: linear-gradient(-45deg, #23a6d5, #23d5ab);
+        // background-size: 400% 400%;
+        // height: 100vh;
+
+        // background: conic-gradient(
+        //     from 90deg,
+        //     rgba(255, 0, 0, 1) 0%,
+        //     rgba(255, 154, 0, 1) 10%,
+        //     rgba(208, 222, 33, 1) 20%,
+        //     rgba(79, 220, 74, 1) 30%,
+        //     rgba(63, 218, 216, 1) 40%,
+        //     rgba(47, 201, 226, 1) 50%,
+        //     rgba(28, 127, 238, 1) 60%,
+        //     rgba(95, 21, 242, 1) 70%,
+        //     rgba(186, 12, 248, 1) 80%,
+        //     rgba(251, 7, 217, 1) 90%,
+        //     rgba(255, 0, 0, 1) 100%
+        // );
+        // background-color: var(--color-mint);
+    }
+
+    &:after {
+        // filter: blur(16px);
+        // opacity: 0.25;
+    }
+}
+
+x-project {
+    display: block;
+    width: 400px;
+}
+
+// MATH
+
+#page-math {
+    .paper-list,
+    .paragraph {
+        max-width: 800px;
+        margin: 0px auto;
+    }
+
+    .paragraph {
+        line-height: 1.5;
+    }
+
+    span.header {
+        display: block;
+        max-width: 800px;
+        margin: 0px auto;
+        text-align: center;
+        font-size: 24px;
+        line-height: 64px;
+        color: var(--color-yellow);
+        position: relative;
+
+        &::before,
+        &:after {
+            content: "";
+            display: block;
+            position: absolute;
+            top: 32px;
+            height: 2px;
+            width: min(320px, 33%);
+            background-color: var(--color-yellow);
+        }
+
+        &::before {
+            left: 0px;
+        }
+
+        &::after {
+            right: 0px;
+        }
+    }
+}
+
+x-paper {
+    display: block;
+}

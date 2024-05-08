@@ -1,0 +1,30 @@
+:root {
+    --font-main: "RobotoSlab";
+
+    // Autumn
+    --color-black: #101010;
+    --color-white: #ffffff;
+    --color-blue: #1a7d8e; // #003943;
+    --color-yellow: #e2a32d;
+    --color-green: #7faa6c; // #9aa794;
+    --color-red: #ba5912;
+    --color-light-gray: #dddddd;    
+
+    // Summer palette
+    // --color-black: #101010;
+    // --color-white: #ffffff;
+    // --color-blue: #02579b;
+    // --color-yellow: #f0b531; //#ffb103;
+    // --color-green: #65b355;
+    // --color-red: #d94d17;
+    // --color-light-gray: #dddddd;
+
+    // Properties
+    --background-color: var(--color-white);
+    --text-color: var(--color-black);
+
+    --easing-function: cubic-bezier(.25, 1, .5, 1);
+    --easing-time: 0.75s;
+    
+
+}

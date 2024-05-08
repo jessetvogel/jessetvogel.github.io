@@ -1,0 +1,289 @@
+@font-face {
+  font-family: "museosans";
+  src: url("../fonts/museosans.otf");
+}
+@font-face {
+  font-family: "consolas";
+  src: url("../fonts/consolas.ttf");
+}
+@font-face {
+  font-family: "RobotoSlab";
+  font-weight: 100;
+  src: url("../fonts/RobotoSlab-Light.ttf");
+}
+@font-face {
+  font-family: "RobotoSlab";
+  font-weight: 400;
+  src: url("../fonts/RobotoSlab-Regular.ttf");
+}
+@font-face {
+  font-family: "RobotoSlab";
+  font-weight: 500;
+  src: url("../fonts/RobotoSlab-Medium.ttf");
+}
+@font-face {
+  font-family: "RobotoSlab";
+  font-weight: 600;
+  src: url("../fonts/RobotoSlab-SemiBold.ttf");
+}
+@font-face {
+  font-family: "RobotoSlab";
+  font-weight: 700;
+  src: url("../fonts/RobotoSlab-Bold.ttf");
+}
+:root {
+  --font-main: "RobotoSlab";
+  --color-black: #101010;
+  --color-white: #ffffff;
+  --color-blue: #1a7d8e;
+  --color-yellow: #e2a32d;
+  --color-green: #7faa6c;
+  --color-red: #ba5912;
+  --color-light-gray: #dddddd;
+  --background-color: var(--color-white);
+  --text-color: var(--color-black);
+  --easing-function: cubic-bezier(.25, 1, .5, 1);
+  --easing-time: 0.75s;
+}
+
+a {
+  color: var(--color-blue);
+}
+a:visited {
+  color: var(--color-blue);
+}
+
+span.reverse {
+  unicode-bidi: bidi-override;
+  direction: rtl;
+}
+
+.no-select {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+body {
+  font-family: var(--font-main);
+  background: var(--background-color);
+  color: var(--text-color);
+  margin: 0;
+}
+
+#menu {
+  position: relative;
+  width: 100%;
+  height: 64px;
+  display: flex;
+  justify-content: center;
+}
+#menu .marker {
+  position: absolute;
+  content: "";
+  background-color: transparent;
+  width: 100%;
+  height: 6px;
+  bottom: 0px;
+  left: 0px;
+  transition: left var(--easing-time) var(--easing-function), width var(--easing-time) var(--easing-function), background-color var(--easing-time) ease-out;
+}
+#menu button {
+  max-width: 160px;
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: 0;
+  height: 64px;
+  background: transparent;
+  color: inherit;
+  border: 0;
+  font-family: "museosans";
+  font-size: 20px;
+  text-transform: uppercase;
+  box-sizing: border-box;
+  position: relative;
+}
+#menu button:hover {
+  cursor: pointer;
+}
+
+#content {
+  margin-top: 16px;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+#content .page {
+  box-sizing: border-box;
+  width: 100%;
+  min-height: calc(100vh - 80px);
+  min-height: calc(100dvh - 80px);
+  position: absolute;
+  left: 100%;
+  top: 0px;
+  padding: 0px 8px 8px 8px;
+  display: none;
+}
+#content .page.visible {
+  display: block;
+}
+
+#page-home {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+#page-home > div {
+  max-width: 800px;
+  margin: 0px auto;
+}
+#page-home .hi {
+  display: block;
+  text-align: center;
+  font-size: 32px;
+  margin-top: 32px;
+}
+#page-home .hi b {
+  color: var(--color-blue);
+}
+#page-home .photo {
+  position: relative;
+  width: 224px;
+  overflow: hidden;
+  border-radius: 50%;
+  background-color: var(--color-blue) 50%;
+  margin: 32px auto;
+  background-image: url("../img/me.jpg");
+  background-size: cover;
+}
+#page-home .photo:before {
+  content: "";
+  display: block;
+  padding-bottom: 100%;
+}
+#page-home .text {
+  text-align: center;
+  padding: 0px 16px;
+  line-height: 1.5;
+}
+#page-home .contact {
+  position: absolute;
+  bottom: 0px;
+  width: 100vw;
+  max-width: 100vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 24px;
+  height: 32px;
+  padding: 8px;
+}
+#page-home .contact a {
+  display: block;
+  width: 32px;
+  height: 32px;
+}
+#page-home .contact img {
+  width: 32px;
+  height: 32px;
+  filter: drop-shadow(0px -1000px 0 var(--color-blue));
+  transform: translateY(1000px);
+}
+#page-home .contact > div {
+  cursor: pointer;
+}
+
+#contact-email {
+  position: relative;
+}
+#contact-email .popup {
+  transition: opacity 0.2s linear;
+  opacity: 0;
+}
+#contact-email .popup.active {
+  opacity: 1;
+}
+#contact-email .popup::after {
+  content: "moc.liamg@legovtessej";
+  position: absolute;
+  letter-spacing: 1px;
+  left: -64px;
+  top: -64px;
+  width: 240px;
+  height: 48px;
+  line-height: 44px;
+  background-color: var(--text-color);
+  color: var(--color-white);
+  text-align: center;
+  font-size: 16px;
+  unicode-bidi: bidi-override;
+  direction: rtl;
+  border-radius: 24px;
+}
+#contact-email .popup::before {
+  content: "";
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  transform: rotate(45deg);
+  left: 4px;
+  top: -36px;
+  background-color: black;
+}
+
+.project-list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 16px 64px;
+  padding: 0px;
+  justify-content: center;
+  max-width: 1500px;
+  margin: 0px auto;
+}
+
+x-project {
+  display: block;
+  width: 400px;
+}
+
+#page-math .paper-list,
+#page-math .paragraph {
+  max-width: 800px;
+  margin: 0px auto;
+}
+#page-math .paragraph {
+  line-height: 1.5;
+}
+#page-math span.header {
+  display: block;
+  max-width: 800px;
+  margin: 0px auto;
+  text-align: center;
+  font-size: 24px;
+  line-height: 64px;
+  color: var(--color-yellow);
+  position: relative;
+}
+#page-math span.header::before, #page-math span.header:after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 32px;
+  height: 2px;
+  width: min(320px, 33%);
+  background-color: var(--color-yellow);
+}
+#page-math span.header::before {
+  left: 0px;
+}
+#page-math span.header::after {
+  right: 0px;
+}
+
+x-paper {
+  display: block;
+}
