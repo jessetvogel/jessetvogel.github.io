@@ -156,7 +156,7 @@ body {
   border-radius: 50%;
   background-color: var(--color-blue) 50%;
   margin: 32px auto;
-  background-image: url("../img/me.jpg");
+  background-image: url("../img/ik.jpg");
   background-size: cover;
 }
 #page-home .photo:before {
