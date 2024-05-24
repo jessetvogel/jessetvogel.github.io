@@ -14,8 +14,10 @@ customElements.define('x-project',
             // Shadow root
             const root = this.attachShadow({ mode: 'open' });
 
-            root.append(create('a', { href: url, target: '_blank' }, create('div', { class: 'square' }, create('div', { class: 'thumbnail' }, create('img', { src: img })))));
-            root.append(create('a', { href: url, target: '_blank' }, create('span', { class: 'title' }, title)));
+            const target = (url == '#') ? '' : '_blank';
+
+            root.append(create('a', { href: url, target: target }, create('div', { class: 'square' }, create('div', { class: 'thumbnail' }, create('img', { src: img })))));
+            root.append(create('a', { href: url, target: target }, create('span', { class: 'title' }, title)));
             root.append(create('span', { class: 'subtitle' }, subtitle));
             root.append(create('span', { class: 'description' }, description));
 
