@@ -207,6 +207,9 @@ body {
 #contact-email .popup.active {
   opacity: 1;
 }
+#contact-email .popup.hidden {
+  display: none;
+}
 #contact-email .popup::after {
   content: "moc.liamg@legovtessej";
   position: absolute;

@@ -1,0 +1,302 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Jesse Vogel">
+    <meta name="description" content="Jesse Vogel">
+    <title>Curriculum Vitae - Jesse Vogel</title>
+    <link rel="icon" type="image/png" href="img/favicon.png">
+    <style>
+        @font-face {
+            font-family: "museosans";
+            src: url("../fonts/museosans.otf");
+        }
+
+        @font-face {
+            font-family: "RobotoSlab";
+            font-weight: 100;
+            src: url("../fonts/RobotoSlab-Light.ttf");
+        }
+
+        @font-face {
+            font-family: "RobotoSlab";
+            font-weight: 400;
+            src: url("../fonts/RobotoSlab-Regular.ttf");
+        }
+
+        @font-face {
+            font-family: "RobotoSlab";
+            font-weight: 500;
+            src: url("../fonts/RobotoSlab-Medium.ttf");
+        }
+
+        @font-face {
+            font-family: "RobotoSlab";
+            font-weight: 600;
+            src: url("../fonts/RobotoSlab-SemiBold.ttf");
+        }
+
+        @font-face {
+            font-family: "RobotoSlab";
+            font-weight: 700;
+            src: url("../fonts/RobotoSlab-Bold.ttf");
+        }
+
+        body {
+            --color-blue: #1a7d8e;
+            --color-text: #000000;
+            --color-gray: #666666;
+
+            background-color: #f7f7f7;
+            line-height: 1.3;
+        }
+
+        #page {
+            position: relative;
+            margin: 8mm auto;
+            padding: 15mm;
+            box-sizing: border-box;
+            width: 210mm;
+            height: 297mm;
+            /* border: 1px solid rgba(0, 0, 0, 0.24); */
+            font-family: "RobotoSlab";
+            font-size: 3.5mm;
+            /* font-weight: 100; */
+            color: var(--color-text);
+            box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.24);
+            background-color: white;
+        }
+
+        body.print {
+            margin: 0;
+            background-color: transparent;
+        }
+
+        body.print #page {
+            margin: 0;
+            box-shadow: 0 0 0;
+            /* border: 0; */
+            width: 210mm;
+        }
+
+        h2 {
+            color: var(--color-blue);
+            margin: 4mm 0mm;
+        }
+
+        #photo {
+            position: absolute;
+            top: 20mm;
+            right: 20mm;
+            width: 50mm;
+            height: 50mm;
+            border-radius: 50%;
+        }
+
+        span.reverse {
+            unicode-bidi: bidi-override;
+            direction: rtl;
+        }
+
+        table {
+            border-collapse: collapse;
+        }
+
+        table td:first-child {
+            vertical-align: top;
+            width: 40mm;
+        }
+
+        a {
+            text-decoration: none;
+            color: var(--color-text);
+        }
+
+        .project {
+            margin: 2mm 0mm;
+        }
+
+        .project span {
+            display: block;
+        }
+
+        .comment {
+            color: #666666;
+            font-style: italic;
+        }
+
+        .dot {
+            display: inline-block;
+            width: 4px;
+            height: 4px;
+            background-color: var(--color-text);
+            border-radius: 100%;
+            position: relative;
+            top: -2px;
+            margin: 0mm 2mm;
+        }
+
+        #flex-columns {
+            display: flex;
+            flex-direction: row;
+        }
+
+        #flex-columns>div {
+            flex-basis: 0;
+            flex-grow: 1;
+        }
+    </style>
+</head>
+
+<body class="no-print">
+    <div id="page">
+        <img id="photo" src="img/ik.jpg" alt />
+
+        <h2>Personalia</h2>
+
+        <table>
+            <tr>
+                <td>Naam</td>
+                <td>Jesse Vogel</td>
+            </tr>
+            <tr>
+                <td>Geboortedatum</td>
+                <td>26 januari 1996</td>
+            </tr>
+            <tr>
+                <td>Adres</td>
+                <!-- <td>Oude Herengracht 17, Leiden</td> -->
+                <td>Kluft 48, Meppel</td>
+            </tr>
+            <tr>
+                <td>Telefoon</td>
+                <td>+31 6 13995654</td>
+            </tr>
+            <tr>
+                <td>E-mailadres</td>
+                <td><a href="mailto:jessetvogel@gmail.com">jessetvogel@gmail.com</a></td>
+            </tr>
+            <tr>
+                <td>Website</td>
+                <td><a href="https://www.jessetvogel.nl" target="_blank">jessetvogel.nl</a></td>
+            </tr>
+            <!-- <tr>
+            <td>GitHub</td>
+            <td><a href="https://www.github.com/jessetvogel">github.com/jessetvogel</a></td>
+        </tr> -->
+        </table>
+
+        <h2>Opleiding en werk</h2>
+
+        <table>
+            <tr>
+                <td>2020 – 2024</td>
+                <td>PhD Wiskunde – Universiteit Leiden<br />
+                    <span class="comment">
+                        Tijdens mijn PhD bestudeerde ik motivische invarianten van karakterstacks, gebruikmakend van topologische kwantumveldentheorie, en ontwikkelde algoritmes om deze invarianten expliciet te berekenen.
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td>2018 – 2020</td>
+                <td>MSc Wiskunde (<i>summa cum laude</i>) – Universiteit Leiden</td>
+            </tr>
+            <tr>
+                <td>2014 – 2018</td>
+                <td>BSc Wiskunde (<i>summa cum laude</i>) – Rijksuniversiteit Groningen</td>
+            </tr>
+            <tr>
+                <td>2014 – 2018</td>
+                <td>BSc Natuurkunde (<i>summa cum laude</i>) – Rijksuniversiteit Groningen</td>
+            </tr>
+            <!-- <tr>
+                <td>2014 – 2015</td>
+                <td>Freelance web developer</td>
+            </tr> -->
+        </table>
+
+        <h2>Artikelen en preprints</h2>
+
+        <div class="project">
+            <span class="title"><a target="_blank" href="https://doi.org/10.1016/j.jalgebra.2024.03.024">On the motivic Higman conjecture</a></span>
+            <span class="comment">Journal of Algebra 651, pp. 19-69 (2024)</span>
+        </div>
+
+        <div class="project">
+            <span class="title"><a href="https://doi.org/10.3842/SIGMA.2022.095" target="_blank">Virtual classes of representation varieties of upper triangular matrices via TQFTs</a></span>
+            <span class="comment">met M. Hablicsek | SIGMA 18, 095, 38 pages (2022)</span>
+        </div>
+
+        <div class="project">
+            <span class="title"><a href="https://arxiv.org/abs/2309.15331" target="_blank">Arithmetic-Geometric Correspondence of Character Stacks via Topological Quantum Field Theory</a></span>
+            <span class="comment">met Á. González-Prieto and M. Hablicsek | arXiv (2023)</span>
+        </div>
+
+        <div class="project">
+            <span class="title"><a href="https://arxiv.org/abs/2009.12310" target="_blank">A Topological Quantum Field Theory for Character Varieties of Non-orientable Surfaces</a></span>
+            <span class="comment">arXiv (2023)</span>
+        </div>
+
+        <div class="project">
+            <span class="title"><a href="https://arxiv.org/abs/2201.08699" target="_blank">Virtual Classes of Character Stacks</a></span>
+            <span class="comment">met Á. González-Prieto and M. Hablicsek | arXiv (2022)</span>
+        </div>
+
+        <h2>Recent projects</h2>
+
+        <div class="project">
+            <span class="title"><a href="https://jessetvogel.nl/math-definitions" target="_blank">Math Definitions (LaTeX, HTML, CSS, JavaScript, Python)</a></span>
+            <span class="comment">Een online bron van wiskundige definities</span>
+        </div>
+
+        <div class="project">
+            <span class="title"><a href="https://github.com/jessetvogel/canard" target="_blank">Canard (C/C++)</a></span>
+            <span class="comment">Een geautomatiseerde stelling bewijzer gebaseerd op type theory</span>
+        </div>
+
+        <div class="project">
+            <span class="title"><a href="https://github.com/jessetvogel/grothendieck-ring" target="_blank">Grothendieck ring (Python)</a></span>
+            <span class="comment">Een algoritme om virtuele klassen te berekenen in de Grothendieckring van variëteiten</span>
+        </div>
+
+        <div class="project">
+            <span class="title">Harmonizer (C/C++)</span>
+            <span class="comment">Een audio plug-in voor het maken van vocale harmonieën</span>
+        </div>
+
+        <div class="project">
+            <span class="title"><a href="https://jessetvogel.nl/physics-simulator" target="_blank">Physics simulator (HTML, CSS, Typscript)</a></span>
+            <span class="comment">Een online simulator gebaseerd op Lagrangiaanse mechanica</span>
+        </div>
+
+        <!-- <h2>Programming skills</h2>
+
+        C/C++, Java, Python, HTML/CSS, JavaScript/TypeScript -->
+
+
+        <h2>Kwaliteiten</h2>
+
+        <!-- SOME WORDS ON ME, MY INTERESTS, MY QUALITIES, ETC -->
+
+        Creatief <span class="dot"></span>
+        analytisch <span class="dot"></span>
+        ijverig <span class="dot"></span>
+        <!-- quick learner <span class="dot"></span> -->
+        <!-- curious <span class="dot"></span> -->
+        leergierig <span class="dot"></span>
+        houd van uitdagingen <span class="dot"></span>
+        betrouwbaar
+        <!-- passionate about math, physics and programming <span class="dot"></span> -->
+
+        <h2>Hobby's</h2>
+
+        <!-- Mathematics <span class="dot"></span> programming <span class="dot"></span> -->
+        Muziek maken <span class="dot"></span> volleybal
+        <!-- <span class="dot"></span> socializing with friends -->
+
+    </div>
+</body>
+
+</html>

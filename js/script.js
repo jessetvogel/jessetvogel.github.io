@@ -15,9 +15,11 @@ window.onload = function () {
     // E-mail popup
     onClick($('contact-email'), function () {
         const popup = this.querySelector('.popup');
-        if (!hasClass(popup, 'active')) {
-            addClass(popup, 'active');
+        if (hasClass(popup, 'hidden')) {
+            removeClass(popup, 'hidden');
+            setTimeout(function () { addClass(popup, 'active'); }, 50);
             setTimeout(function () { removeClass(popup, 'active'); }, 5000);
+            setTimeout(function () { addClass(popup, 'hidden'); }, 5200);
         }
     });
     // Hello world!

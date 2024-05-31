@@ -173,6 +173,10 @@ body {
             opacity: 1;
         }
 
+        &.hidden {
+            display: none;
+        }
+
         &::after {
             content: "moc.liamg@legovtessej";
             position: absolute;
