@@ -132,6 +132,7 @@ body {
     .contact {
         position: absolute;
         bottom: 0px;
+        left: 0px;
         width: 100vw;
         max-width: 100vw;
 
@@ -140,7 +141,7 @@ body {
         justify-content: center;
         gap: 24px;
         height: 32px;
-        padding: 8px;
+        padding: 8px 0px;
 
         a {
             display: block;
