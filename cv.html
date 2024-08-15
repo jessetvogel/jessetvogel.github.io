@@ -150,7 +150,7 @@
     </style>
 </head>
 
-<body class="no-print">
+<body>
     <div id="page">
         <img id="photo" src="img/ik.jpg" alt />
 
@@ -195,7 +195,8 @@
                 <td>2020 – 2024</td>
                 <td>PhD Mathematics – Leiden University<br />
                     <span class="comment">
-                        During my PhD, I studied motivic invariants of character stacks, using topological quantum field theory, and developed algorithms to explicitly compute these invariants.
+                        During my PhD, I studied motivic invariants of character stacks, using topological quantum field
+                        theory, and developed algorithms to explicitly compute these invariants.
                     </span>
                 </td>
             </tr>
@@ -220,44 +221,58 @@
         <h2>Papers and preprints</h2>
 
         <div class="project">
-            <span class="title"><a target="_blank" href="https://doi.org/10.1016/j.jalgebra.2024.03.024">On the motivic Higman conjecture</a></span>
+            <span class="title"><a target="_blank" href="https://doi.org/10.1016/j.jalgebra.2024.03.024">On the motivic
+                    Higman conjecture</a></span>
             <span class="comment">Journal of Algebra 651, pp. 19-69 (2024)</span>
         </div>
 
         <div class="project">
-            <span class="title"><a href="https://doi.org/10.3842/SIGMA.2022.095" target="_blank">Virtual classes of representation varieties of upper triangular matrices via TQFTs</a></span>
+            <span class="title"><a href="https://doi.org/10.3842/SIGMA.2022.095" target="_blank">Virtual classes of
+                    representation varieties of upper triangular matrices via TQFTs</a></span>
             <span class="comment">with M. Hablicsek | SIGMA 18, 095, 38 pages (2022)</span>
         </div>
 
         <div class="project">
-            <span class="title"><a href="https://arxiv.org/abs/2309.15331" target="_blank">Arithmetic-Geometric Correspondence of Character Stacks via Topological Quantum Field Theory</a></span>
+            <span class="title"><a href="https://arxiv.org/abs/2309.15331" target="_blank">Arithmetic-Geometric
+                    Correspondence of Character Stacks via Topological Quantum Field Theory</a></span>
             <span class="comment">with Á. González-Prieto and M. Hablicsek | arXiv (2023)</span>
         </div>
 
         <div class="project">
-            <span class="title"><a href="https://arxiv.org/abs/2009.12310" target="_blank">A Topological Quantum Field Theory for Character Varieties of Non-orientable Surfaces</a></span>
+            <span class="title"><a href="https://arxiv.org/abs/2009.12310" target="_blank">A Topological Quantum Field
+                    Theory for Character Varieties of Non-orientable Surfaces</a></span>
             <span class="comment">arXiv (2023)</span>
         </div>
 
         <div class="project">
-            <span class="title"><a href="https://arxiv.org/abs/2201.08699" target="_blank">Virtual Classes of Character Stacks</a></span>
+            <span class="title"><a href="https://arxiv.org/abs/2201.08699" target="_blank">Virtual Classes of Character
+                    Stacks</a></span>
             <span class="comment">with Á. González-Prieto and M. Hablicsek | arXiv (2022)</span>
         </div>
 
         <h2>Recent projects</h2>
 
         <div class="project">
-            <span class="title"><a href="https://jessetvogel.nl/math-definitions" target="_blank">Math Definitions (LaTeX, HTML, CSS, JavaScript, Python)</a></span>
-            <span class="comment">An online resource for mathematical definitions</span>
+            <span class="title"><a href="https://adjectivesproject.org" target="_blank">Adjectives Project (HTML, CSS,
+                    JavaScript, Python)</a></span>
+            <span class="comment">A website and data project for finding interesting examples in algebraic
+                geometry</span>
         </div>
 
+        <!-- <div class="project">
+            <span class="title"><a href="https://jessetvogel.nl/math-definitions" target="_blank">Math Definitions (LaTeX, HTML, CSS, JavaScript, Python)</a></span>
+            <span class="comment">An online resource for mathematical definitions</span>
+        </div> -->
+
         <div class="project">
-            <span class="title"><a href="https://github.com/jessetvogel/canard" target="_blank">Canard (C/C++)</a></span>
+            <span class="title"><a href="https://github.com/jessetvogel/canard" target="_blank">Canard
+                    (C/C++)</a></span>
             <span class="comment">A light-weight automated theorem prover based on type theory</span>
         </div>
 
         <div class="project">
-            <span class="title"><a href="https://github.com/jessetvogel/grothendieck-ring" target="_blank">Grothendieck ring (Python)</a></span>
+            <span class="title"><a href="https://github.com/jessetvogel/grothendieck-ring" target="_blank">Grothendieck
+                    ring (Python)</a></span>
             <span class="comment">An algorithm to compute virtual classes in the Grothendieck ring of varieties</span>
         </div>
 
@@ -267,7 +282,8 @@
         </div>
 
         <div class="project">
-            <span class="title"><a href="https://jessetvogel.nl/physics-simulator" target="_blank">Physics simulator (HTML, CSS, Typscript)</a></span>
+            <span class="title"><a href="https://jessetvogel.nl/physics-simulator" target="_blank">Physics simulator
+                    (HTML, CSS, Typscript)</a></span>
             <span class="comment">An online physics simulator based on the Lagrangian formalism</span>
         </div>
 
@@ -297,6 +313,13 @@
         <!-- <span class="dot"></span> socializing with friends -->
 
     </div>
+
+    <script>
+        window.onkeydown = (event) => {
+            if (event.key == 'p')
+                document.body.classList.toggle('print');
+        };
+    </script>
 </body>
 
 </html>

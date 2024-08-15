@@ -302,9 +302,12 @@
         <!-- <span class="dot"></span> socializing with friends -->
 
     </div>
-    <script type="text/javascript">
-        if (document.location.search == '?print')
-            document.body.classList.add('print');
+    
+    <script>
+        window.onkeydown = (event) => {
+            if (event.key == 'p')
+                document.body.classList.toggle('print');
+        };
     </script>
 </body>
 
