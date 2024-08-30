@@ -1,4 +1,4 @@
-window.onload = function () {
+document.addEventListener('DOMContentLoaded', function () {
     const pages = $$('#menu button').map(x => x.id.substring(7)); // removes `button-` prefix
     for (const x of pages)
         onClick($(`button-${x}`), () => {
@@ -24,7 +24,7 @@ window.onload = function () {
     });
     // Hello world!
     console.log('👋🏻 🌍!');
-};
+});
 function setPage(name, animate = true) {
     var _a;
     const activePage = (_a = $$('.page.active')) === null || _a === void 0 ? void 0 : _a[0];

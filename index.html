@@ -10,7 +10,7 @@
     <link rel="icon" type="image/png" href="img/favicon.png">
     <link rel="stylesheet" href="css/style.css">
     <script type="module" src="js/script.js"></script>
-    <!-- <script defer data-domain="jessetvogel.nl" src="https://analytics.jessetvogel.nl/js/script.js"></script> -->
+    <script async src="https://analytics.jessetvogel.nl/script.js"></script>
 </head>
 
 <body>
@@ -42,41 +42,63 @@
                 <div id="contact-email">
                     <div class="hidden popup"></div><img src="img/icons/email.png" alt />
                 </div>
-                <div><a href="https://github.com/jessetvogel" target="_blank"><img src="img/icons/github.png" alt /></a></div>
-                <div><a href="https://www.linkedin.com/in/jesse-vogel-59424663" target="_blank"><img src="img/icons/linkedin.png" alt /></a></div>
+                <div><a href="https://github.com/jessetvogel" target="_blank"><img src="img/icons/github.png" alt /></a>
+                </div>
+                <div><a href="https://www.linkedin.com/in/jesse-vogel-59424663" target="_blank"><img
+                            src="img/icons/linkedin.png" alt /></a></div>
             </div>
         </div>
 
         <div class="page" id="page-projects">
             <div class="project-list">
-                <x-project title="Audioscope" subtitle="A web-based oscilloscope for audio signals" url="https://jessetvogel.nl/audioscope" img="img/projects/audioscope.png" color="var(--color-red)">
+                <x-project title="Audioscope" subtitle="A web-based oscilloscope for audio signals"
+                    url="https://jessetvogel.nl/audioscope" img="img/projects/audioscope.png" color="var(--color-red)">
                     Visualize audio signals from your microphone in the browser, with frequency and period detection.
                 </x-project>
-                <x-project title="Math Definitions" subtitle="An online resource for mathematical definitions" url="https://jessetvogel.nl/math-definitions" img="img/projects/math-definitions.png" color="var(--color-green)">
+                <x-project title="Math Definitions" subtitle="An online resource for mathematical definitions"
+                    url="https://jessetvogel.nl/math-definitions" img="img/projects/math-definitions.png"
+                    color="var(--color-green)">
                     Find definitions and examples throughout all of pure mathematics.
                 </x-project>
-                <x-project title="Physics Simulator" subtitle="A web-based physics simulator" url="https://jessetvogel.nl/physics-simulator/" img="img/projects/physics-simulator.png" color="var(--color-yellow)">
+                <x-project title="Physics Simulator" subtitle="A web-based physics simulator"
+                    url="https://jessetvogel.nl/physics-simulator/" img="img/projects/physics-simulator.png"
+                    color="var(--color-yellow)">
                     Simulate physical systems based on Lagrangian mechanics.
                 </x-project>
-                <x-project title="Adjectives Project" subtitle="A website for examples in algebraic geometry " url="https://jessetvogel.nl/adjectives-project" img="img/projects/adjectives-project.png" color="var(--color-blue)">
-                    Search for examples in algebraic geometry based on adjectives, and automatically deduce new properties.
+                <x-project title="Adjectives Project" subtitle="A website for examples in algebraic geometry "
+                    url="https://jessetvogel.nl/adjectives-project" img="img/projects/adjectives-project.png"
+                    color="var(--color-blue)">
+                    Search for examples in algebraic geometry based on adjectives, and automatically deduce new
+                    properties.
                 </x-project>
-                <x-project title="The 80th Second" subtitle="An adventure game" url="https://gamejolt.com/games/the-80th-second/16257" img="img/projects/the-80th-second.png" color="black">
+                <x-project title="The 80th Second" subtitle="An adventure game"
+                    url="https://gamejolt.com/games/the-80th-second/16257" img="img/projects/the-80th-second.png"
+                    color="black">
                     A mystery game with a music theme, which received the 1<sup>st</sup> prize in a Dutch game jam.
                 </x-project>
-                <x-project title="Canard" subtitle="A lightweight automated theorem prover" url="https://github.com/jessetvogel/canard" img="img/projects/canard.png" color="var(--color-light-gray)">
-                    Write definitions and theorems in a functional programming style, and use automated search to find examples and proofs.
+                <x-project title="Canard" subtitle="A lightweight automated theorem prover"
+                    url="https://github.com/jessetvogel/canard" img="img/projects/canard.png"
+                    color="var(--color-light-gray)">
+                    Write definitions and theorems in a functional programming style, and use automated search to find
+                    examples and proofs.
                 </x-project>
-                <x-project title="Harmonizer" subtitle="A Max for Live device" url="#" img="img/projects/max-harmonizer.png" color="var(--color-yellow)">
-                    This device turns your voice into a choir (with up to 16 voices) which can be controlled via MIDI, all in real-time.
+                <x-project title="Harmonizer" subtitle="A Max for Live device" url="#"
+                    img="img/projects/max-harmonizer.png" color="var(--color-yellow)">
+                    This device turns your voice into a choir (with up to 16 voices) which can be controlled via MIDI,
+                    all in real-time.
                 </x-project>
-                <x-project title="Synthax" subtitle="A virtual modular-based programmable synthesizer" url="#" img="img/projects/synthax.png" color="var(--color-red)">
-                    Synthax lets you build custom synths with as many oscillators, filters, effects, knobs and buttons as you want. It works both as a standalone application and as an audio plugin (VST/VST3).
+                <x-project title="Synthax" subtitle="A virtual modular-based programmable synthesizer" url="#"
+                    img="img/projects/synthax.png" color="var(--color-red)">
+                    Synthax lets you build custom synths with as many oscillators, filters, effects, knobs and buttons
+                    as you want. It works both as a standalone application and as an audio plugin (VST/VST3).
                 </x-project>
-                <x-project title="Photo Manager" subtitle="A Java-based tool for managing your photos" url="https://github.com/jessetvogel/photo-manager" img="img/projects/photo-manager.png" color="var(--color-green)">
+                <x-project title="Photo Manager" subtitle="A Java-based tool for managing your photos"
+                    url="https://github.com/jessetvogel/photo-manager" img="img/projects/photo-manager.png"
+                    color="var(--color-green)">
                     Scroll through your photos and videos via a browser interface, and tag your friends in photos.
                 </x-project>
-                <x-project title="Droste" subtitle="A tool for creating Escher-like images" url="https://jessetvogel.nl/droste/" img="img/projects/droste.png" color="var(--color-light-gray)">
+                <x-project title="Droste" subtitle="A tool for creating Escher-like images"
+                    url="https://jessetvogel.nl/droste/" img="img/projects/droste.png" color="var(--color-light-gray)">
                     Create self-referencing images and animations, inspired by Escher and the Droste-effect.
                 </x-project>
             </div>
@@ -85,16 +107,25 @@
         <div class="page" id="page-math">
 
             <div class="paragraph">
-                In 2024, I obtained my doctorate at the Mathematical Institute of Leiden University, under the supervision of <a target="_blank" href="https://sites.google.com/site/mhablicsek">Márton Hablicsek</a>. My interests are in algebraic geometry, character stacks, the Grothendieck ring of varieties and stacks, and automated theorem proving.
+                In 2024, I obtained my doctorate at the Mathematical Institute of Leiden University, under the
+                supervision of <a target="_blank" href="https://sites.google.com/site/mhablicsek">Márton Hablicsek</a>.
+                My interests are in algebraic geometry, character stacks, the Grothendieck ring of varieties and stacks,
+                and automated theorem proving.
             </div>
 
             <span class="header">Theses</span>
 
             <div class="paper-list">
 
-                <x-paper title="Motivic Invariants of Character Stacks" year="2024" comments="PhD thesis at Leiden University" url="https://pub.math.leidenuniv.nl/~vogeljt/files/theses/PhD_Thesis_Jesse_Vogel.pdf"></x-paper>
-                <x-paper title="Computing Virtual Classes of Representation Varieties using TQFTs" year="2020" comments="Master thesis at Leiden University" url="https://pub.math.leidenuniv.nl/~vogeljt/files/theses/MSc_Thesis_Jesse_Vogel.pdf"></x-paper>
-                <x-paper title="Generalized Geometry and DFT Applications to Closed String Theory" year="2018" comments="Bachelor thesis at University of Groningen" url="https://pub.math.leidenuniv.nl/~vogeljt/files/theses/BSc_Thesis_Jesse_Vogel.pdf"></x-paper>
+                <x-paper title="Motivic Invariants of Character Stacks" year="2024"
+                    comments="PhD thesis at Leiden University"
+                    url="https://pub.math.leidenuniv.nl/~vogeljt/files/theses/PhD_Thesis_Jesse_Vogel.pdf"></x-paper>
+                <x-paper title="Computing Virtual Classes of Representation Varieties using TQFTs" year="2020"
+                    comments="Master thesis at Leiden University"
+                    url="https://pub.math.leidenuniv.nl/~vogeljt/files/theses/MSc_Thesis_Jesse_Vogel.pdf"></x-paper>
+                <x-paper title="Generalized Geometry and DFT Applications to Closed String Theory" year="2018"
+                    comments="Bachelor thesis at University of Groningen"
+                    url="https://pub.math.leidenuniv.nl/~vogeljt/files/theses/BSc_Thesis_Jesse_Vogel.pdf"></x-paper>
 
             </div>
 
@@ -102,12 +133,24 @@
 
             <div class="paper-list">
 
-                <x-paper title="Cohomology of Character Stacks via TQFTs" year="2024" comments="Preprint" url="https://arxiv.org/abs/2406.19857"></x-paper>
-                <x-paper title="On the Motivic Higman Conjecture" year="2024" comments="Journal of Algebra 651, pp.19-69" url="https://doi.org/10.1016/j.jalgebra.2024.03.024"></x-paper>
-                <x-paper title="Arithmetic-Geometric Correspondence of Character Stacks via Topological Quantum Field Theory" year="2023" comments="with Á. González-Prieto and M. Hablicsek" url="https://arxiv.org/abs/2309.15331"></x-paper>
-                <x-paper title="A Topological Quantum Field Theory for Character Varieties of Non-orientable Surfaces" year="2023" comments="Submitted" url="https://arxiv.org/abs/2009.12310"></x-paper>
-                <x-paper title="Virtual Classes of Character Stacks" year="2022" comments="with Á. González-Prieto and M. Hablicsek" url="https://arxiv.org/abs/2201.08699"></x-paper>
-                <x-paper title="Virtual Classes of Representation Varieties of Upper Triangular Matrices via Topological Quantum Field Theories" year="2022" comments="with M. Hablicsek | SIGMA 18, 095, 38 pages" url="https://doi.org/10.3842/SIGMA.2022.095"></x-paper>
+                <x-paper title="Cohomology of Character Stacks via TQFTs" year="2024" comments="Preprint"
+                    url="https://arxiv.org/abs/2406.19857"></x-paper>
+                <x-paper title="On the Motivic Higman Conjecture" year="2024"
+                    comments="Journal of Algebra 651, pp.19-69"
+                    url="https://doi.org/10.1016/j.jalgebra.2024.03.024"></x-paper>
+                <x-paper
+                    title="Arithmetic-Geometric Correspondence of Character Stacks via Topological Quantum Field Theory"
+                    year="2023" comments="with Á. González-Prieto and M. Hablicsek"
+                    url="https://arxiv.org/abs/2309.15331"></x-paper>
+                <x-paper title="A Topological Quantum Field Theory for Character Varieties of Non-orientable Surfaces"
+                    year="2023" comments="Submitted" url="https://arxiv.org/abs/2009.12310"></x-paper>
+                <x-paper title="Virtual Classes of Character Stacks" year="2022"
+                    comments="with Á. González-Prieto and M. Hablicsek"
+                    url="https://arxiv.org/abs/2201.08699"></x-paper>
+                <x-paper
+                    title="Virtual Classes of Representation Varieties of Upper Triangular Matrices via Topological Quantum Field Theories"
+                    year="2022" comments="with M. Hablicsek | SIGMA 18, 095, 38 pages"
+                    url="https://doi.org/10.3842/SIGMA.2022.095"></x-paper>
 
             </div>
 
@@ -115,23 +158,52 @@
 
             <div class="paper-list">
 
-                <x-paper title="An Arithmetic-Geometric Correspondence for Character Stacks" year="19-04-2024"" comments=" Intercity Number Theory Seminar" url="https://pub.math.leidenuniv.nl/~vogeljt/files/talks/An Arithmetic-Geometric Correspondence for Character Stacks (ICNT).pdf"></x-paper>
-                <x-paper title="Mixed Hodge Complexes" year="21-11-2023"" comments=" Mixed Hodge Structures Seminar" url="https://pub.math.leidenuniv.nl/~vogeljt/files/talks/Mixed Hodge Complexes.pdf"></x-paper>
-                <x-paper title="An Arithmetic-Geometric Correspondence for Character Stacks" year="10-11-2023"" comments=" Junior Belgian-Dutch Algebraic Geometry Seminar" url="https://pub.math.leidenuniv.nl/~vogeljt/files/talks/An Arithmetic-Geometric Correspondence for Character Stacks.pdf"></x-paper>
-                <x-paper title="Henselian Rings" year="12-06-2023"" comments=" Étale Cohomology Seminar" url="https://pub.math.leidenuniv.nl/~vogeljt/files/talks/Henselian Rings.pdf"></x-paper>
-                <x-paper title="Gröbner Bases" year="22-11-2022"" comments=" Algorithms in Algebra Seminar" url="https://pub.math.leidenuniv.nl/~vogeljt/files/talks/Groebner Bases.pdf"></x-paper>
-                <x-paper title="Solid Abelian Groups" year="11-11-2022"" comments=" Intercity Seminar Condensed Mathematics" url="https://pub.math.leidenuniv.nl/~vogeljt/files/talks/Solid Abelian Groups.pdf"></x-paper>
-                <x-paper title="Representation Varieties for Upper Triangular Matrices" year="05-10-2022"" comments=" ICMAT Geometry Seminar" url="https://pub.math.leidenuniv.nl/~vogeljt/files/talks/Representation Varieties for Upper Triangular Matrices.pdf"></x-paper>
-                <x-paper title="Introduction to Lean" year="21-09-2022"" comments=" Lean Workshop" url="https://pub.math.leidenuniv.nl/~vogeljt/files/talks/Introduction to Lean (Notes).pdf"></x-paper>
-                <x-paper title="Automated Construction of Examples in Algebraic Geometry" year="21-07-2022"" comments=" Lean User Meeting" url="https://pub.math.leidenuniv.nl/~vogeljt/files/talks/Automated Construction of Examples in Algebraic Geometry.pdf"></x-paper>
-                <x-paper title="Virtual Classes of Character Stacks" year="03-03-2022"" comments=" Mathematical Physics and Algebraic Geometry Seminar" url="https://pub.math.leidenuniv.nl/~vogeljt/files/talks/Virtual Classes of Character Stacks.pdf"></x-paper>
-                <x-paper title="Deformation Quantization" year="02-12-2021"" comments=" Non-commutative Seminar" url="https://pub.math.leidenuniv.nl/~vogeljt/files/talks/Deformation Quantization.pdf"></x-paper>
-                <x-paper title="Solvable and Triangularizable Groups" year="22-11-2021"" comments=" Algebraic Groups Seminar" url="https://pub.math.leidenuniv.nl/~vogeljt/files/talks/Solvable and Triangularizable Groups.pdf"></x-paper>
-                <x-paper title="An Introduction to Symplectic Geometry" year="21-10-2021"" comments=" Non-commutative Geometry Seminar" url="https://pub.math.leidenuniv.nl/~vogeljt/files/talks/Symplectic Geometry.pdf"></x-paper>
-                <x-paper title="Computing E-polynomials" year="07-06-2021"" comments=" Effective Methods in Algebraic Geometry" url="https://pub.math.leidenuniv.nl/~vogeljt/files/posters/Computing E-polynomials.pdf"></x-paper>
-                <x-paper title="Computing Virtual Classes of Representation Varieties using Topological Quantum Field Theories" year="26-11-2020"" comments=" DIAMANT Symposium" url="https://pub.math.leidenuniv.nl/~vogeljt/files/talks/Computing Virtual Classes of Representation Varieties using Topological Quantum Field Theories.pdf"></x-paper>
-                <x-paper title="Representation Varieties and Topological Quantum Field Theories" year="06-11-2020"" comments=" Leiden Algebra, Geometry, and Number Theory Seminar" url="https://pub.math.leidenuniv.nl/~vogeljt/files/talks/Representation Varieties and Topological Quantum Field Theories.pdf"></x-paper>
-                <x-paper title="Log Smooth, Étale and Differentials" year="21-10-2020"" comments=" Log Geometry Seminar" url="https://pub.math.leidenuniv.nl/~vogeljt/files/talks/Log Smooth Etale and Differentials.pdf"></x-paper>
+                <x-paper title="An Arithmetic-Geometric Correspondence for Character Stacks"
+                    year="19-04-2024"" comments=" Intercity Number Theory Seminar"
+                    url="https://pub.math.leidenuniv.nl/~vogeljt/files/talks/An Arithmetic-Geometric Correspondence for Character Stacks (ICNT).pdf"></x-paper>
+                <x-paper title="Mixed Hodge Complexes" year="21-11-2023"" comments=" Mixed Hodge Structures Seminar"
+                    url="https://pub.math.leidenuniv.nl/~vogeljt/files/talks/Mixed Hodge Complexes.pdf"></x-paper>
+                <x-paper title="An Arithmetic-Geometric Correspondence for Character Stacks"
+                    year="10-11-2023"" comments=" Junior Belgian-Dutch Algebraic Geometry Seminar"
+                    url="https://pub.math.leidenuniv.nl/~vogeljt/files/talks/An Arithmetic-Geometric Correspondence for Character Stacks.pdf"></x-paper>
+                <x-paper title="Henselian Rings" year="12-06-2023"" comments=" Étale Cohomology Seminar"
+                    url="https://pub.math.leidenuniv.nl/~vogeljt/files/talks/Henselian Rings.pdf"></x-paper>
+                <x-paper title="Gröbner Bases" year="22-11-2022"" comments=" Algorithms in Algebra Seminar"
+                    url="https://pub.math.leidenuniv.nl/~vogeljt/files/talks/Groebner Bases.pdf"></x-paper>
+                <x-paper title="Solid Abelian Groups" year="11-11-2022"" comments=" Intercity Seminar Condensed
+                    Mathematics"
+                    url="https://pub.math.leidenuniv.nl/~vogeljt/files/talks/Solid Abelian Groups.pdf"></x-paper>
+                <x-paper title="Representation Varieties for Upper Triangular Matrices" year="05-10-2022"" comments="
+                    ICMAT Geometry Seminar"
+                    url="https://pub.math.leidenuniv.nl/~vogeljt/files/talks/Representation Varieties for Upper Triangular Matrices.pdf"></x-paper>
+                <x-paper title="Introduction to Lean" year="21-09-2022"" comments=" Lean Workshop"
+                    url="https://pub.math.leidenuniv.nl/~vogeljt/files/talks/Introduction to Lean (Notes).pdf"></x-paper>
+                <x-paper title="Automated Construction of Examples in Algebraic Geometry" year="21-07-2022"" comments="
+                    Lean User Meeting"
+                    url="https://pub.math.leidenuniv.nl/~vogeljt/files/talks/Automated Construction of Examples in Algebraic Geometry.pdf"></x-paper>
+                <x-paper title="Virtual Classes of Character Stacks" year="03-03-2022"" comments=" Mathematical Physics
+                    and Algebraic Geometry Seminar"
+                    url="https://pub.math.leidenuniv.nl/~vogeljt/files/talks/Virtual Classes of Character Stacks.pdf"></x-paper>
+                <x-paper title="Deformation Quantization" year="02-12-2021"" comments=" Non-commutative Seminar"
+                    url="https://pub.math.leidenuniv.nl/~vogeljt/files/talks/Deformation Quantization.pdf"></x-paper>
+                <x-paper title="Solvable and Triangularizable Groups" year="22-11-2021"" comments=" Algebraic Groups
+                    Seminar"
+                    url="https://pub.math.leidenuniv.nl/~vogeljt/files/talks/Solvable and Triangularizable Groups.pdf"></x-paper>
+                <x-paper title="An Introduction to Symplectic Geometry" year="21-10-2021"" comments=" Non-commutative
+                    Geometry Seminar"
+                    url="https://pub.math.leidenuniv.nl/~vogeljt/files/talks/Symplectic Geometry.pdf"></x-paper>
+                <x-paper title="Computing E-polynomials" year="07-06-2021"" comments=" Effective Methods in Algebraic
+                    Geometry"
+                    url="https://pub.math.leidenuniv.nl/~vogeljt/files/posters/Computing E-polynomials.pdf"></x-paper>
+                <x-paper
+                    title="Computing Virtual Classes of Representation Varieties using Topological Quantum Field Theories"
+                    year="26-11-2020"" comments=" DIAMANT Symposium"
+                    url="https://pub.math.leidenuniv.nl/~vogeljt/files/talks/Computing Virtual Classes of Representation Varieties using Topological Quantum Field Theories.pdf"></x-paper>
+                <x-paper title="Representation Varieties and Topological Quantum Field Theories"
+                    year="06-11-2020"" comments=" Leiden Algebra, Geometry, and Number Theory Seminar"
+                    url="https://pub.math.leidenuniv.nl/~vogeljt/files/talks/Representation Varieties and Topological Quantum Field Theories.pdf"></x-paper>
+                <x-paper title="Log Smooth, Étale and Differentials" year="21-10-2020"" comments=" Log Geometry Seminar"
+                    url="https://pub.math.leidenuniv.nl/~vogeljt/files/talks/Log Smooth Etale and Differentials.pdf"></x-paper>
 
             </div>
 
