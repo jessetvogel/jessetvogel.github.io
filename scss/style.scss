@@ -1,6 +1,6 @@
-@import "fonts";
-@import "colors";
-@import "general";
+@use "fonts";
+@use "colors";
+@use "general";
 
 body {
     font-family: var(--font-main);
