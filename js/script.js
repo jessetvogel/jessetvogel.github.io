@@ -352,7 +352,7 @@ customElements.define('x-project', class extends HTMLElement {
                 .thumbnail img {
                     max-width: 78.25%;
                     max-height: 78.25%;
-                    filter: drop-shadow(0px 0px 16px rgba(0, 0, 0, 0.67));
+                    filter: drop-shadow(0px 0px 16px rgba(0, 0, 0, 0.5));
                     border-radius: 6px;
                     transition: transform 0.4s var(--easing-function);
                 }
